@@ -1,14 +1,13 @@
 package reflexion;
 
-import com.sun.xml.internal.ws.developer.Serialization;
-
+import javax.annotation.Resource;
 import java.beans.ConstructorProperties;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.*;
 
 public class CodeAnalyzer implements ICodeAnalyzer {
 
-    @Serialization
+    @Resource
     @Analyzable
     private String name;
 
